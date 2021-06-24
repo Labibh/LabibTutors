@@ -1,19 +1,26 @@
-import React from 'react';
-import styled from 'styled-components';
-import {Container, Row, Col} from 'react-bootstrap';
-import ParticlesBg from 'particles-bg'
+import React from "react";
+import styled from "styled-components";
+import { Container, Row, Col } from "react-bootstrap";
+import ParticlesBg from "particles-bg";
 
-import Wrapper from "../wrapper/Wrapper"
-import myPic from './Web_Face_Pic.jpg';
+import Wrapper from "../wrapper/Wrapper";
+import myPic from "./Web_Face_Pic.jpg";
 
 const LandingStyled = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
   .container {
     background-color: rgb(229, 229, 229, 0.6);
     min-height: 90vh;
     min-width: 90vw;
     margin-top: 50px;
+  }
+
+  .particles-bg-style {
+    z-index: -1;
+    height: 100vh;
+    width: 98vw;
+    position: absolute;
   }
 
   .row-1 {
@@ -29,7 +36,7 @@ const LandingStyled = styled.div`
   }
 
   .greetings {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     font-size: 40px;
     height: 100%;
     text-align: left;
@@ -37,7 +44,7 @@ const LandingStyled = styled.div`
     justify-content: center;
     align-items: center;
   }
-  
+
   .subtitle {
     font-size: 20px;
     padding: 10px 0;
@@ -53,40 +60,49 @@ const LandingStyled = styled.div`
   .my-picture > img {
     border-radius: 10%;
   }
-`
+  @media only screen and (max-width: 768px) {
+    .my-picture > img {
+      height: 70vw;
+      width: auto;
+    }
+  }
+`;
 
-const Landing = props => {
-
-    return (
-        <LandingStyled id="landing">
-            <Wrapper>
-                <ParticlesBg type="cobweb" num={80} bg={true}/>
-                <Container fluid className="container">
-                    <Row className="row-1">
-                        <Col md={6}>
-                            <div className="greetings">
-                                <p>Hi <br/>
-                                    I'm Labib, <br/>
-                                    the Math tutor</p>
-                            </div>
-                        </Col>
-                        <Col md={6}>
-                            <div className="my-picture">
-                                <img src={myPic}/>
-                            </div>
-                        </Col>
-                    </Row>
-                    <Row className="row-2">
-                        <Col md={12}>
-                            <div className="subtitle">
-                                <p>Professionally Tutoring students of Ontario since 2012</p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </Wrapper>
-        </LandingStyled>
-    );
-}
+const Landing = (props) => {
+  return (
+    <LandingStyled id="landing">
+      <Wrapper>
+        <span className="particles-bg-style">
+          <ParticlesBg type="cobweb" num={80} />
+        </span>
+        <Container fluid className="container">
+          <Row className="row-1">
+            <Col md={6}>
+              <div className="greetings">
+                <p>
+                  Hi <br />
+                  I'm Labib, <br />
+                  the Math tutor
+                </p>
+              </div>
+            </Col>
+            <Col md={6}>
+              <div className="my-picture">
+                <img src={myPic} alt="The Tutor" />
+              </div>
+            </Col>
+          </Row>
+          <Row className="row-2">
+            <Col md={12}>
+              <div className="subtitle">
+                <p>Professionally Tutoring students of Ontario since 2012</p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Wrapper>
+    </LandingStyled>
+  );
+};
 
 export default Landing;

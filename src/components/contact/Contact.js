@@ -1,21 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
-import ParticlesBg from 'particles-bg'
+import React from "react";
+import styled from "styled-components";
 
-import Wrapper from "../wrapper/Wrapper"
+import Wrapper from "../wrapper/Wrapper";
 
 const ContactStyled = styled.div`
-  background-color: #14213D;
-`
+  background-color: #14213d;
+`;
 
-const Contact = props => {
-
-    return (
-        <ContactStyled id="contact">
-            <Wrapper>
-            </Wrapper>
-        </ContactStyled>
-    );
-}
+const Contact = (props) => {
+  return (
+    <ContactStyled id="contact">
+      <Wrapper></Wrapper>
+    </ContactStyled>
+  );
+};
 
 export default Contact;
