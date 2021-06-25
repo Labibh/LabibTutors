@@ -9,7 +9,7 @@ const AboutStyled = styled.div`
 
   .grid-wrapper {
     display: grid;
-    height: 90vh;
+    min-height: 90vh;
     width: 80vw;
     margin: 4% auto 1%;
   }
@@ -56,7 +56,7 @@ const AboutStyled = styled.div`
     transition: 1.5s;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) and (orientation: portrait) {
     .grid-wrapper {
       width: 90vw;
       grid-template-columns: 1fr;
@@ -81,7 +81,8 @@ const AboutStyled = styled.div`
       display: none;
     }
   }
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 769px),
+    (max-width: 768px) and (orientation: landscape) {
     .grid-wrapper {
       grid-template-columns: 2fr 3fr;
       grid-template-rows: 8fr 2fr;

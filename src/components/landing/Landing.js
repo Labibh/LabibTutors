@@ -62,7 +62,7 @@ const LandingStyled = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .my-picture > img {
-      height: 70vw;
+      height: 300px;
       width: auto;
     }
   }

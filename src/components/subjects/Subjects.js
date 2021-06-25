@@ -35,12 +35,12 @@ const SubjectsStyled = styled.div`
     line-height: 2;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) and (orientation: portrait) {
     .grid-wrapper {
-      height: 90vh;
+      min-height: 90vh;
       width: 90vw;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 2fr 2fr;
+      grid-template-rows: 1fr 1fr 1.5fr 1.5fr;
       gap: 10px 0;
       margin-top: 55px;
     }
@@ -63,13 +63,14 @@ const SubjectsStyled = styled.div`
     }
   }
 
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 769px),
+    (max-width: 768px) and (orientation: landscape) {
     .grid-wrapper {
-      height: 80vh;
+      min-height: 80vh;
       width: 70vw;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr 3fr;
-      gap: 20px 20px;
+      gap: 20px;
     }
 
     .heading-grade {
