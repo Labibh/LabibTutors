@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/LabibTutors/static/css/main.8f5349f6.chunk.css",
+    "main.js": "/LabibTutors/static/js/main.661de444.chunk.js",
+    "main.js.map": "/LabibTutors/static/js/main.661de444.chunk.js.map",
+    "runtime-main.js": "/LabibTutors/static/js/runtime-main.65788f15.js",
+    "runtime-main.js.map": "/LabibTutors/static/js/runtime-main.65788f15.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/LabibTutors/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.77c18d66.chunk.js": "/LabibTutors/static/js/2.77c18d66.chunk.js",
+    "static/js/2.77c18d66.chunk.js.map": "/LabibTutors/static/js/2.77c18d66.chunk.js.map",
+    "static/js/3.e1f9e541.chunk.js": "/LabibTutors/static/js/3.e1f9e541.chunk.js",
+    "static/js/3.e1f9e541.chunk.js.map": "/LabibTutors/static/js/3.e1f9e541.chunk.js.map",
+    "index.html": "/LabibTutors/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/LabibTutors/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.8f5349f6.chunk.css.map": "/LabibTutors/static/css/main.8f5349f6.chunk.css.map",
+    "static/js/2.77c18d66.chunk.js.LICENSE.txt": "/LabibTutors/static/js/2.77c18d66.chunk.js.LICENSE.txt",
+    "static/media/Web_Face_Pic.07001322.jpg": "/LabibTutors/static/media/Web_Face_Pic.07001322.jpg",
+    "static/media/bg-image-compass-vertical.bdadf3db.jpg": "/LabibTutors/static/media/bg-image-compass-vertical.bdadf3db.jpg",
+    "static/media/bg-image-compass.415986b0.jpg": "/LabibTutors/static/media/bg-image-compass.415986b0.jpg",
+    "static/media/boy-icon.97ce6cca.svg": "/LabibTutors/static/media/boy-icon.97ce6cca.svg",
+    "static/media/contact-page-image.4e9a668f.jpg": "/LabibTutors/static/media/contact-page-image.4e9a668f.jpg",
+    "static/media/girl-icon.2275415d.svg": "/LabibTutors/static/media/girl-icon.2275415d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65788f15.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.77c18d66.chunk.js",
+    "static/css/main.8f5349f6.chunk.css",
+    "static/js/main.661de444.chunk.js"
+  ]
+}
